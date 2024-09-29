@@ -25,12 +25,12 @@ const Job = ({job}) => {
         <div className='flex relative items-center gap-2 my-2'>
         <Button className="p-6"  variant="outline" size="icon">
             {/* <Avatar>
-                <AvatarImage  src="https://tse4.mm.bing.net/th?id=OIP.4dcJ_AHTJ81dikKbJ_xBtgAAAA&pid=Api&P=0&h=180"/>
+                <AvatarImage  src={job?.company?.logo}/>
             </Avatar> */}
              <div className="absolute w-12 h-12">
       <Avatar className="w-full h-full">
         <AvatarImage
-          src="https://tse4.mm.bing.net/th?id=OIP.4dcJ_AHTJ81dikKbJ_xBtgAAAA&pid=Api&P=0&h=180"
+          src={job?.company?.logo}
           alt="@shadcn"
           className="object-cover w-full h-full"
         />
