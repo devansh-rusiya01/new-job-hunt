@@ -36,7 +36,7 @@ const Login = () => {
        
         try {
              dispatch(setLoading(true));
-             const res=await axios.post(`https://new-job-hunt-1-o.onrender.com/login`,input,{
+             const res=await axios.post(`${USER_API_END_POINT}/login`,input,{
                    headers:{
                     "Content-Type":"application/json"
                    },
