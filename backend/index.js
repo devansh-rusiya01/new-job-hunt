@@ -33,7 +33,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:"https://new-job-hunt-1-o.onrender.com",
+    origin: ["http://localhost:5173", "https://new-job-hunt-1-o.onrender.com"],
     credentials:true
 }
 app.use(cors(corsOptions));
